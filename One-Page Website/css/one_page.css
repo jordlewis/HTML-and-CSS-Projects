@@ -1,0 +1,132 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	background-color: black;
+	box-sizing: border-box;
+}
+h1 {
+	color: white;
+	font-family: consolas;
+	text-align: center;
+	margin: 0 auto;
+	padding: 4px;
+	font-size: 75px;
+	margin-top: 5%;
+}
+h2 {
+	color: white;
+	font-family: consolas;
+	text-align: center;
+	margin: 0 auto;
+	padding: 4px;
+	font-size: 40px;
+	margin-top: 5%;
+}
+body {
+	margin: 0;
+	font-family: Consolas;
+}
+.nav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  border: 1px solid FireBrick;
+}
+
+a:hover {
+	background-color: DimGray;
+}
+
+.nav {
+	float: none;
+	position: absolute;
+	overflow: hidden;
+	background-color: black;
+	top: 3%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+p {
+	font-family: Consolas;
+	color: white;
+	margin: 35px;
+}
+
+.gall {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+	align-content: center;
+	border: 5px solid FireBrick;
+	padding: 30px;
+	margin: auto;
+}
+
+.gall:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.gall-item {
+	display: inline-block;
+	flex: 33.33%;
+	padding: 0 15px;
+	text-align: center;
+}
+
+.gall img {
+	border: 1px solid DimGray;
+	border-radius: 4px; 
+	padding: 10px;
+	width: 300px;
+}
+
+.home-cont {
+	width: 100%;
+	float: left;
+	text-align: center;
+}
+.caption {
+	text-align: center;
+}
+input[type=text] {
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 3px solid FireBrick;
+  color: white;
+  font-family: Consolas;
+  background-color: black;
+  
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: FireBrick;
+  border: 1px solid white;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.rsvp {
+	font-family: consolas;
+	text-align: center;
+}
+.form {
+	color: white;
+	font-family: consolas;
+	text-align: center;
+	align-content: center;
+	padding: 10px 10px;
+}
+.video {
+	position: relative;
+	width: 650px;
+	height: 405px;
+
+}
