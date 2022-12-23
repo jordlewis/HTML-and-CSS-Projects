@@ -1,8 +1,8 @@
-<h1>HTML and CSS Projects</h1>
+# HTML and CSS Projects #
 
 -----
 
-<h3>Projects</h3>
+### Projects ###
 
 <details>
   <summary>Movie Theater Site</summary>
@@ -15,10 +15,10 @@
  </details>
  
  
- <h3>Author</h3>
+ ### Author ###
  
  Jordyn Lewis
  
- <h3>Acknowledgements</h3>
+ ### Acknowledgements ###
  
  The Tech Academy
