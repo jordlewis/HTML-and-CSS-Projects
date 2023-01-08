@@ -1,0 +1,346 @@
+/*-----------------------------------------------------------------
+	AUTHOR: JORDYN LEWIS
+	ONE-PAGE WEBSITE
+-----------------------------------------------------------------*/
+
+html {
+	font-family: 'Bahnschrift', sans-serif;
+	font-size: 65%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body {
+	font-size: 16px;
+	margin: 0;
+	font-family: 'Bahnschrift', sans-serif;
+	line-height: 2;
+	color: rgba(255, 255, 255, 0);
+	background-color: rgba(0, 0, 0, 0);
+}
+
+footer,
+nav {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bahnschrift', sans-serif;
+	text-align: center;
+}
+
+h1 {
+	line-height: 70px;
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+p {
+    font-weight: 300;
+    line-height: 30px;
+    padding-bottom: 10px;
+	text-align: center;
+	font-size: 20px;
+}
+.center-text {
+    text-align: center;
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.nav {
+    max-height: 340px;
+    margin: 0% auto;
+    content: " ";
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.menu {
+    color: #ffffff;
+    font: bold 14px/20px sans-serif;
+    text-align: center;
+    display: inline;
+    margin: 0% auto;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.menu li {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+    margin: 0% auto;
+    position: relative;
+    padding: 15px 4%;
+    border: 2px solid #F00;
+    box-shadow: 1px 1px 10px 0 rgba(119, 113, 113, 0.603);
+    border-radius: 1px 1px 10px 0 rgba(119, 113, 113, 0.603);
+    border-radius: 4px;
+    cursor: crosshair;
+}
+
+.clearfix::after,
+.container::after,
+.navbar::after {
+    clear: both;
+    display: table;
+    content: " ";
+}
+
+.row {
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.containter-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*-----------------------------------------------------------------
+	HOME CONTENT STYLE
+-----------------------------------------------------------------*/
+
+#gallery,
+#sign-up,
+#home {
+    background: url(../images/background.png) no-repeat 50% 50%;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    color: #fff;
+}
+
+.main-head {
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.9);
+    font-variant: small-caps;
+    color: #fff;
+    letter-spacing: 5pt;
+    word-spacing: 21pt;
+    font-size: 4.5em;
+    text-align: left;
+    font-family: 'Bahnschrift', sans-serif;
+    line-height: 2;
+    font-weight: 900;
+    padding: 10px;
+}
+.iframe-wrapped {
+    display: flex;
+    justify-content: center; 
+}
+
+.video {
+    right: 0;
+    bottom: 0;
+    width: 768px;
+    height: 432px;
+  
+  }
+
+
+/*-----------------------------------------------------------------
+	GALLERY CONTENT STYLE
+-----------------------------------------------------------------*/
+.flex-container{
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    border-radius: 5px;
+    margin: 0px auto;
+}
+
+.gall-img {
+    position: relative;
+    line-height: 0;
+    margin-bottom: 2em;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 1px;
+    border: 1px solid #535353b6;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 2px 2px 10px 0 rgba(124, 7, 7, 0.623);
+}
+
+.gall {
+    width: 400px;
+	height: auto;
+	margin: 0 auto;
+	align-items: baseline;
+	
+}
+
+.gall img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+	margin: 0 auto;
+}
+
+.caption {
+	background:rgb(0, 0, 0);
+	position: relative;
+	color: #fff;
+	text-align: center;
+	top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*----------------------------------------------------------
+    FOOTER STYLES
+-----------------------------------------------------------*/
+.flex-container{
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0px auto;
+
+}
+
+#sign-up {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.form {
+    width: 40%;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 0px auto;
+
+}
+
+.form form {
+    font-size: 18px;
+    outline: none;
+    font-weight: 600;
+    color: #ccd0d1;
+    padding: 12px 12px;
+    width: 70%;
+    border: 2px solid #F00;
+    margin: 2% auto;
+    border-radius: 4px;
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+.form input[type="text"] {
+    font-size: 18px;
+    outline: none;
+    font-weight: 600;
+    color: #ccd0d1;
+    padding: 2% 1% 2% 7%;
+    width: 86%;
+    border-top: 1px solid #090B0D;
+    border-right: 2px dotted #ccd0d1;
+    border-bottom: 2px dotted #ccd0d1;
+    border-left: 1px solid #090B0D;
+    margin: 15px 1em;
+    border-radius: 4px;
+    background: #13161B;
+    box-shadow: inset 0px 3px 0px 0px rgba(5, 5, 5, 0.15);
+    font-family: 'Bahnschrift', sans-serif;
+}
+
+.reservation input[type="text"]:hover {
+    box-shadow: 0 0 18px rgba(180, 0, 0, 0.8);
+}
+
+.form-spacer {
+    padding: 30px 40px;
+}
+
+.terms {
+    margin: 30px 1px 0 0;
+    margin-top: 3%;
+    padding-left: 52px;
+    font-size: 14px;
+    line-height: 5px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-family: 'Bahnschrift', sans-serif;
+    font-weight: 600;
+    position: relative;
+    display: inline;
+    float: right;
+}
+
+.terms:hover {
+    color: #f00;
+    text-decoration: underline;
+}
+
+.submit input[type="submit"] {
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: none;
+    font-weight: 900;
+    outline: none;
+    text-align: center;
+    font-family: 'Bahnschrift', sans-serif;
+    margin: 1px 3%;
+    width: 30%;
+    font-size: 18px;
+    transition: border-color 0.3s color 0.3s background-color 0.3s;
+    border: 2px solid rgba(124, 7, 7, 0.623);;
+    border-radius: 4px;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 1px 1px 4px 0 rgba(82, 81, 81, 0.637);
+}
+
+.submit input[type="submit"]:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 0, 0, 0.082);
+    box-shadow: inset 1px 2px 15px 0 rgba(180, 0, 0, 0.411);
+}
+
+
+
+
+
+/*----------------------------------------------------------
+    FOOTER STYLES
+-----------------------------------------------------------*/
+#footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px 0 rgb(0, 0, 0);
+    padding: 20px 50px 20px 50px;
+    text-align: right;
+}
