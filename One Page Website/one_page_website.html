@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<title>Darth Vader Fan Club</title>
 		<link rel="stylesheet" type="text/css" href="./css/one_page_website.css">
+		<script defer src="JS/one_page_website.js"></script>
 	</head>
 	<body>
 	
@@ -33,114 +34,136 @@
 	<!-- END HOME -->
 	
 	<!-- GALLERY -->
-	<section id="gallery">
-		<div class="container">
-			<h1>GALLERY</h1>
-			<h3>Please enjoy the gallery and selected quotes from Lord Vader</h3>
-			<div class="flex-container">
-				
-				<!-- PHOTO-CONTAINER 1 -->
-				<div class="gall">
-					<div class="gall-img">
-						<img src="./images/thumb/thumbnail_1.png" alt="Darth Vader">
-						<div class="caption">
-							<p>"Anakin Skywalker was weak. I destroyed him."</p>
+<!--Images used to open the lightbox -->
+	<div id="gallery">
+		<div class="row">
+			<div class="column">
+				<img src="./images/thumb/thumb_1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+			</div>
+
+			<div class="column">
+				<img src="./images/thumb/thumb_2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+			</div>
+
+			<div class="column">
+				<img src="./images/thumb/thumb_3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+			</div>
+
+			<div class="column">
+				<img src="./images/thumb/thumb_4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+			</div>
+
+			<div class="column">
+				<img src="./images/thumb/thumb_5.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+			</div>
+
+			<div class="column">
+				<img src="./images/thumb/thumb_6.png" onclick="openModal();currentSlide(6)" class="hover-shadow">
+			</div>
+
+			<div class="column">
+				<img src="./images/thumb/thumb_7.png" onclick="openModal();currentSlide(7)" class="hover-shadow">
+			</div>
+
+			<div class="column">
+				<img src="./images/thumb/thumb_8.png" onclick="openModal();currentSlide(8)" class="hover-shadow">
+			</div>
+
+			<div class="column">
+				<img src="./images/thumb/thumb_9.png" onclick="openModal();currentSlide(9)" class="hover-shadow">
+			</div>
+
+		</div>
+
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="mySlides">
+						<div class="numbertext">1 / 9</div>
+						<img src="./images/img_1.png" style="width:100%">
 						</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2 / 9</div>
+						<img src="./images/img_2.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">3 / 9</div>
+						<img src="./images/img_3.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">4 / 9</div>
+						<img src="./images/img_4.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">5 / 9</div>
+						<img src="./images/img_5.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">6 / 9</div>
+						<img src="./images/img_6.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">7 / 9</div>
+						<img src="./images/img_7.png" style="width:100%">
+					</div>
+					
+					<div class="mySlides">
+						<div class="numbertext">8 / 9</div>
+						<img src="./images/img_8.png" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">9 / 9</div>
+						<img src="./images/img_9.png" style="width:100%">
+					</div>
+			
+					<!-- Next/Previous controls -->
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+					
+					<!-- Caption text -->
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+			
+			<!-- Thumbnail image controls -->
+					<div class="column">
+						<img class="demo" src="./images/thumb/thumb_1.png" onclick="currentSlide(1)" alt="Anakin Skywalker was weak. I destroyed him.">
+					</div>
+					<div class="column">
+						<img class="demo" src="./images/thumb/thumb_2.png" onclick="currentSlide(2)" alt="I am altering the deal, pray I do not alter it any futher.">
+					</div>
+					<div class="column">
+						<img class="demo" src="./images/thumb/thumb_3.png" onclick="currentSlide(3)" alt="I do not fear the dark side as you do.">
+					</div>
+					<div class="column">
+						<img class="demo" src="./images/thumb/thumb_4.png" onclick="currentSlide(4)" alt="You are beaten. It is useless to resist.">
+					</div>
+					<div class="column">
+						<img class="demo" src="./images/thumb/thumb_5.png" onclick="currentSlide(5)" alt="From my ponit of view, the Jedi are evil.">
+					</div>
+					<div class="column">
+						<img class="demo" src="./images/thumb/thumb_6.png" onclick="currentSlide(6)" alt="I find your lack of faith disturbing.">
+					</div>
+					<div class="column">
+						<img class="demo" src="./images/thumb/thumb_7.png" onclick="currentSlide(7)" alt="The ability to destroy a planet is insignificant next to the power of the force.">
+					</div>
+					<div class="column">
+						<img class="demo" src="./images/thumb/thumb_8.png" onclick="currentSlide(8)" alt="Be careful not to choke on your aspirations.">
+					</div>
+					<div class="column">
+						<img class="demo" src="./images/thumb/thumb_9.png" onclick="currentSlide(9)" alt="All I am surrounded by is fear, and dead men.">
 					</div>
 				</div>
-				<!-- END PHOTO-CONTAINER 1 -->
-				
-				<!-- PHOTO-CONTAINER 2 -->
-				<div class="gall">
-					<div class="gall-img">
-						<img src="./images/thumb/thumbnail_2.png" alt="Darth Vader">
-						<div class="caption">
-							<p>"Be careful not to choke on your aspirations, Director."<br>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 2 -->
-				
-				<!-- PHOTO-CONTAINER 3 -->
-				<div class="gall">
-					<div class="gall-img">
-						<img src="./images/thumb/thumbnail_3.png" alt="Darth Vader">
-						<div class="caption">
-							<p>"I find your lack Of faith disturbing."<br>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 3 -->
-				
-				<!-- PHOTO-CONTAINER 4 -->
-				<div class="gall">
-					<div class="gall-img">
-						<img src="./images/thumb/thumbnail_4.png" alt="Darth Vader">
-						<div class="caption">
-							<p>"When I left you, I was but the learner. Now, I am the master."<br>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 4 -->
-				
-				<!-- PHOTO-CONTAINER 5 -->
-				<div class="gall">
-					<div class="gall-img">
-						<img src="./images/thumb/thumbnail_5.png" alt="Darth Vader">
-						<div class="caption">
-							<p>"I am altering the deal. Pray I don't alter it any further."<br>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 5-->
-				
-				<!-- PHOTO-CONTAINER 6 -->
-				<div class="gall">
-					<div class="gall-img">
-						<img src="./images/thumb/thumbnail_6.png" alt="Darth Vader">
-						<div class="caption">
-							<p>"You are beaten. It is useless to resist.<br>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 6 -->
-				
-				<!-- PHOTO-CONTAINER 7 -->
-				<div class="gall">
-					<div class="gall-img">
-						<img src="./images/thumb/thumbnail_7.png" alt="Darth Vader">
-						<div class="caption">
-							<p>"No, I... am your father."<br>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 7 -->
-				
-				<!-- PHOTO-CONTAINER 8 -->
-				<div class="gall">
-					<div class="gall-img">
-						<img src="./images/thumb/thumbnail_8.png" alt="Darth Vader">
-						<div class="caption">
-							<p>"You don't know the power of the dark side."<br>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 8 -->
-				
-				<!-- PHOTO-CONTAINER 9 -->
-				<div class="gall">
-					<div class="gall-img">
-						<img src="./images/thumb/thumbnail_9.png" alt="Darth Vader">
-						<div class="caption">
-							<p>"All I am surrounded by is fear, and dead men."<br>
-						</div>
-					</div>
-				</div>
-				<!-- END PHOTO-CONTAINER 9 -->
-				
 			</div>
 		</div>
-	</section>
 	 <!-- END GALLERY -->
 	 
 	 <!-- RSVP -->
