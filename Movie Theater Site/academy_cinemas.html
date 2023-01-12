@@ -13,7 +13,7 @@
   <body>
 
     <div class="container">
-
+        <!-- Beginning Nav Bar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-info">
           
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -34,13 +34,19 @@
               </form>
             </div>
         </nav>
+        <!-- End of Nav Bar -->
 
+        <!-- Beginning of Jumbotron -->
         <div class="jumbotron jumbotron-fluid bg-info text-center ">
             <div class="container">
               <h1 class="display-2 text-light">Academy Cinemas</h1>
               <p class="lead text-light">Sit back, relax, and enjoy the show...</p>
             </div>
         </div>
+
+        <!-- End of Jumbotron -->
+
+        <!-- Beginning of Accomodations / Now Playing container -->
 
         <div class="container">
             <div class="row">
@@ -51,7 +57,7 @@
                 <div class="col-sm">
                     <h3 id="about">Accomodations:</h3>
                     <p>Located in beautiful Oklahoma City, Oklahoma. Our reels have been spinning for generations.</p>
-                    <p>Showing our guests a great time is our passino and seeing their smiles is our pleasure!</p>
+                    <p>Showing our guests a great time is our passion and seeing their smiles is our pleasure!</p>
                     <p>All of our auditoriums are equipped with brand new Christie 3D&reg; sound systems!</p>
                     <p>Relax in our extra-wide, plush custioning recliiners. Our seating arrangemnt is dsability friendly &#9855;.</p>
                 </div>
@@ -73,7 +79,56 @@
             </div>
         </div>
 
-        <!--SHOWTIMES-->
+        <!-- End of Accomodations / Now Playing container -->
+
+        <!-- Beginning of Carousel -->
+
+        <div id="carouselExampleCaptions" class="carousel slide mt-4 mx-auto w-75 t-1" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/retro.png" class="d-block h-100 w-100" alt="Neon theater scenery">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Classically Retro</h5>
+                  <p>Come experience a blast from the past in our historically accurate theater!</p>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+             <img src="./img/popcorn.png" class="d-block  h-100 w-100" alt="Popcorn">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Tasty Snacks!</h5>
+                <p>Freshly made popcorn, as you deserve!</p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="./img/inside_theater.jpg" class="d-block  h-100 w-100" alt="Inside theater">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Reclining Seats!</h5>
+                    <p>The theater was restored to include modern comforts while viewing!</p>
+                 </div>
+            </div>
+          </div>
+
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <!-- End of Carousel -->
+
+        <!-- Beginning of Showtimes-->
         <h2 id="showtimes" class="my-3">Showtimes:</h2>
         
         <div class="card-deck">
@@ -119,18 +174,77 @@
         </div>
 
 
-        <!--/SHOWTIMES-->
+        <!-- End of Showtimes -->
 
+        <!-- Beginning of Jumbotron -->
+        <div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+            <div class="container">
+                <h1 class="display-4 hidden-sm-down" style="color:#fff;font-family:roboto;font-weight:900;text-transform:uppercase;">Movie Deals</h1>
+                <p class="lead">Check out our monthly deals...</p>
+                <!--  Beginning of Movie Deals-->
+                <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+                <!-- End of Movie Deals-->
+            </div>
+        </div>
+
+        <!-- End of Jumbotron -->
+
+        <!-- Beginning of Signup Form-->
         <div class="text-center">
             <form id="deals">
                 <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
                 <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to recieve great movie reward deals!">Sign Up!</button>
         </div>
 
+        <!-- End of Signup Form-->
+
+        <!-- Beginning of Form Modal -->
+
+        <div class="modal" tabindex="-1" role="dialog" id="register">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Register to recieve movie deals...</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+
+                  <form>
+                    <fieldset class="form-group">
+                      <label for="formGroupExampleInput">First Name:</label>
+                      <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="formGroupExampleInput2">Last Name:</label>
+                      <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="formGroupExampleInput">Email:</label>
+                      <input type="text" class="form-control" id="email" placeholder="Email...">
+                    </fieldset>
+                    <fieldset class="form-group">
+                      <label for="formGroupExampleInput2">Password:</label>
+                      <input type="text" class="form-control" id="password" placeholder="Password...">
+                    </fieldset>
+                  </form>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        <!-- End of Form Modal -->
+
+        <!-- Beginning of Footer -->
        <div class="container my-5">
             <ul class="nav">
                 <li class="nav-item">
@@ -147,15 +261,26 @@
                 </li>
             </ul>
        </div>
-        
+        <!-- End of Footer -->
+     
        
     </div>
 
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <!-- JavaScript Functions -->
+
+    <script>
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+            })
+                </script>
+  <!-- End of JavaScript Functions-->
+
   </body>
 </html>
